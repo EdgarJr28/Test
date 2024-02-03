@@ -37,6 +37,7 @@ export class RatingController {
 
     @Auth(Role.ADMIN)
     @Get('rating/best')
+    @ApiBearerAuth()
     @ApiParam({
         name: 'id', required: true, description: 'ingrese el id del video a consultar su rating.', schema: {
             type: 'string',
