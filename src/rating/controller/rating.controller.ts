@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Param, Post, Req } from '@nestjs/common';
 import { RatingService } from '../services/rating.service';
 import { Rating } from '../entities/rating.entity';
-import { Auth } from 'src/auth/decorators/auth.decorator';
-import { Role } from 'src/common/enums/roles.enum';
+import { Auth } from '../../auth/decorators/auth.decorator';
+import { Role } from '../../common/enums/roles.enum';
 import { ApiBearerAuth, ApiBody, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { setRatingDto } from '../dto/setRating.dto';
 

@@ -1,5 +1,5 @@
 
-import { Videos } from 'src/videos/entities/videos.entity';
+import { Videos } from '../../videos/entities/videos.entity';
 import {
     Column,
     CreateDateColumn,

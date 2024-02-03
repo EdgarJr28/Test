@@ -1,5 +1,5 @@
 
-import { Rating } from 'src/rating/entities/rating.entity';
+import { Rating } from '../../rating/entities/rating.entity';
 import {
     Column,
     CreateDateColumn,

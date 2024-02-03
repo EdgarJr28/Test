@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Videos } from '../entities/videos.entity';
 import { VideosRepository } from '../repository/videos.repository';
 import { SaveVideoDto } from '../dto/saveVideo.dto';
-import { createUrlDocuments } from 'src/common/functions/videos.sort';
+import { createUrlDocuments } from '../../common/functions/videos.sort';
 import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
