@@ -12,10 +12,7 @@ async function bootstrap() {
       'Todos los servicios de la API.',
     )
     .setVersion('1.0')
-    .addBearerAuth(
-      { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
-      'access_token',
-    )
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, configSw);
   SwaggerModule.setup('docs', app, document);

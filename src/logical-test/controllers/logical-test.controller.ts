@@ -14,12 +14,12 @@ export class LogicalTestController {
     @Post('/odd')
     @ApiBody({ type: Odddto })
     async getOdd(@Body() body: Odddto) {
-        let number: number = body.number
-        return this.logicalService.oddUntilN(number);
+        let n: number = body.number
+        return this.logicalService.oddUntilN(n);
     }
 
     @Post('/trigonometric')
-    @ApiBody({ type: TrigonometricDto })
+    @ApiProperty({ type: () => TrigonometricDto })
     async getTrigonometric(@Body() body: TrigonometricDto) {
         let { x, y, z } = body
         return this.logicalService.trigonometricFunction(x, y, z);

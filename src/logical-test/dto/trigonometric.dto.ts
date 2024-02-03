@@ -2,11 +2,11 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class TrigonometricDto {
   @ApiProperty()
-  x: number;
+  readonly x: number;
 
   @ApiProperty()
-  y: number;
+  readonly y: number;
 
   @ApiProperty()
-  z: number;
+  readonly z: number;
 }
